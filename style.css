@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(135deg, #2e026d, #151c3b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+.video-wrapper {
+  background: #0f172a;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 900px;
+}
+.mac-bar {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  padding: 8px 14px;
+  border-bottom: 1px solid #2b3a55;
+  position: relative;
+}
+.mac-bar .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.red {
+  background: #ff605c;
+}
+.yellow {
+  background: #ffbd44;
+}
+.green {
+  background: #00ca4e;
+}
+.video-title {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+.video-container {
+  position: relative;
+}
+video {
+  width: 100%;
+  display: block;
+  border-radius: 0 0 14px 14px;
+  outline: none;
+}
+video::-webkit-media-controls-panel {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 14px 14px;
+}
+@media (max-width: 600px) {
+  .video-title {
+    font-size: 12px;
+  }
+}
